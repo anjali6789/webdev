@@ -1,0 +1,86 @@
+html {
+  height: 100%;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  padding: 0;
+  background-color: #e26e5c;
+  background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='40' height='40' patternTransform='scale(4) rotate(180)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(86,67.3%,71.2%,1)'/><path d='M0 32.502h40v5.001H0Zm0-4.999h40v5.001H0ZM27.141 5.001l5.357 7.502-5.357 7.498H12.857l-5.358-7.498 5.358-7.502ZM0 17.502l2.5-4.999L0 7.502Zm40 0-2.5-4.999L40 7.502ZM3.749 3.751l1.25-1.25-1.25-1.25H0v2.5Zm32.5-2.5H40v2.5h-3.75l-1.251-1.25ZM3.75 23.751 5 22.501l-1.25-1.25H0v2.5zm32.5 0L35 22.502l1.25-1.25H40v2.5z'  stroke-width='1' stroke='none' fill='hsla(195,52.5%,42.9%,1)'/><path d='M12.498 32.502H27.5v5.001h-15zm15.001-7.5h-15L10 27.503h20zm5.002 2.501H35v5.001h-2.5zm-27.502 0h2.5v5.001H5zm5-25-7.497 10 7.498 10h19.999l7.501-10-7.501-10ZM12.859 5H27.14l5.356 7.502L27.14 20H12.858l-5.36-7.498Z'  stroke-width='1' stroke='none' fill='hsla(153,57.3%,59.6%,1)'/><path d='M0 0v1.249h3.747L5 2.502l-1.253 1.25H0V5h5l2.497-2.498L5 0Zm34.998 0-2.497 2.502L34.998 5h5V3.751h-3.75l-1.25-1.249 1.25-1.253h3.75V0Zm-17.38 10-1.786 2.502L17.617 15h4.764l1.785-2.498L22.381 10zM0 20v1.253h3.747L5 22.503 3.747 23.75H0v1.253h5l2.497-2.502L5 20Zm34.998 0-2.497 2.502 2.497 2.502h5v-1.253h-3.75l-1.25-1.249 1.25-1.249h3.75V20Zm-22.5 7.502v5.004H27.5v-5.004zm-7.498 5v5h2.497v-5zm27.5 0v5h2.503v-5zm-22.5 5L12.497 40h15.004l2.498-2.498z'  stroke-width='1' stroke='none' fill='hsla(289,18.6%,28.4%,1)'/></pattern></defs><rect width='800%' height='800%' transform='translate(-92,-136)' fill='url(%23a)'/></svg>");
+  text-align: center;
+}
+
+h1 {
+  display: inline;
+  font-size: 5rem;
+  text-align: center;
+  color: #e26e5c;
+  background-color: white;
+}
+
+h2 {
+  color: #e26e5c;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+button {
+  font-size: 5rem;
+}
+
+.buttons button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  padding: 0;
+  margin: 0 10px;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.buttons button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.buttons button img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+#recipeContainer {
+  background-color: white;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#recipeTitle {
+  color: #e26e5c;
+}
+
+#ingredientsList {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+#ingredientsList li {
+  margin-bottom: 10px;
+  color: #555;
+}
